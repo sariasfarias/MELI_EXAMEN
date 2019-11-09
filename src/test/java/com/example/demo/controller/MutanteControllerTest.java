@@ -41,5 +41,33 @@ class MutanteControllerTest {
          
         assertThat(responseEntity.getStatusCodeValue()).isEqualTo(403);
 	}
+	
+	@Test
+	void valorIncorrectoTest() {
+		
+		MockHttpServletRequest request = new MockHttpServletRequest();
+        RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
+         
+        MutanteDto mutanteDto = new MutanteDto();
+        String[] adn= {"TTGCTAT","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
+        mutanteDto.setAdn(adn);
+        ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);
+         
+        assertThat(responseEntity.getStatusCodeValue()).isEqualTo(400);
+	}
+	
+	@Test
+	void valorNullTest() {
+		
+		MockHttpServletRequest request = new MockHttpServletRequest();
+        RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
+         
+        MutanteDto mutanteDto = new MutanteDto();
+        String[] adn= {"PTGCTA","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
+        mutanteDto.setAdn(adn);
+        ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);
+         
+        assertThat(responseEntity.getStatusCodeValue()).isEqualTo(400);
+	}
 
 }

@@ -65,6 +65,9 @@ public class MutanteService {
 				char[] aux = adn[i].toCharArray();
 				for (int j = 0; j < aux.length; j++) {
 					matrizAdn[i][j] = Character.toString(aux[j]);
+					if(!(matrizAdn[i][j].equals("A") || matrizAdn[i][j].equals("T") || matrizAdn[i][j].equals("C") || matrizAdn[i][j].equals("G"))) {
+						error=true;
+					}
 				}
 			}
 			return onRow(matrizAdn) || onColumn(matrizAdn) || onCross(matrizAdn);
