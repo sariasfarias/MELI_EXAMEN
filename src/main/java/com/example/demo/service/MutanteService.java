@@ -70,7 +70,7 @@ public class MutanteService {
 					}
 				}
 			}
-			return onRow(matrizAdn) || onColumn(matrizAdn) || onCross(matrizAdn);
+			return onLine(matrizAdn);
 			
 		}catch(Exception e) {
 			error=true;
@@ -78,66 +78,79 @@ public class MutanteService {
 		}
 	}
 
-	public boolean onRow(String[][] adn) {
-		boolean isMutant = false;
-		int contador = 0;
+	public boolean onLine(String[][] adn) {
+		int contadorRow = 0;
+		int contadorColumn=0;
+		int contadorCross=0;
 		for (int i = 0; i < adn.length; i++) {
 			for (int j = 0; j < adn.length; j++) {
 				// recorro la matriz
-				contador = 0;
-				if(adn.length-j>=4) {
-					for (int a = j; a < j+4; a++) {
-						if (adn[i][j].equals(adn[i][a])) {
-							contador++;
-						}
-						if (contador == 4)
-							isMutant = true;
+				 contadorRow = 0;
+				 contadorColumn=0;
+				 contadorCross=0;
+				if(adn.length-j>=4 && adn.length-j>=4) {
+//					for (int a = j; a < j+4; a++) {
+//						if (adn[i][j].equals(adn[i][a]) || adn[i][j].equals(adn[a][j])) {
+//							contador++;
+//						}
+//						if (contador == 4)
+//							return true;
+//					}
+					for (int b = 0; b <4 ; b++) {
+						if (adn[i][j].equals(adn[i][j+b]))
+							contadorRow++;
+						if ( adn[i][j].equals(adn[i+b][j])) 
+							contadorColumn++;
+						if (adn[i][j].equals(adn[i + b][j + b]))
+							contadorCross++;
+						if (contadorRow == 4 || contadorColumn == 4 ||contadorCross == 4)
+							return true;
 					}
 				}
 				
 			}
 			
 		}
-		return isMutant;
+		return false;
 	}
 
-	public boolean onColumn(String[][] adn) {
-		boolean isMutant = false;
-		int contador = 0;
-		for (int i = 0; i < adn.length; i++) {
-			for (int j = 0; j < adn.length; j++) {
-				// recorro la matriz
-				contador = 0;
-				if(adn.length-i>=4) {
-					for (int a = i; a <i+4; a++) {
-						if (adn[i][j].equals(adn[a][j]))
-							contador++;
-						if (contador == 4)
-							isMutant = true;
-					}
-				}
-			}
-		}
-		return isMutant;
-	}
-
-	public boolean onCross(String[][] adn) {
-		boolean isMutant = false;
-		int contador = 0;
-		for (int i = 0; i < adn.length; i++) {
-			for (int j = 0; j < adn.length; j++) {
-				// recorro la matriz
-				contador = 0;
-				if(adn.length-i>=4 && adn.length-j>=4) {
-					for (int b = 0; b <4 ; b++) {
-						if (adn[i][j].equals(adn[i + b][j + b]))
-							contador++;
-						if (contador == 4)
-							isMutant = true;
-					}
-				}	
-			}
-		}
-		return isMutant;
-	}
+//	public boolean onColumn(String[][] adn) {
+//		boolean isMutant = false;
+//		int contador = 0;
+//		for (int i = 0; i < adn.length; i++) {
+//			for (int j = 0; j < adn.length; j++) {
+//				// recorro la matriz
+//				contador = 0;
+//				if(adn.length-i>=4) {
+//					for (int a = i; a <i+4; a++) {
+//						if (adn[i][j].equals(adn[a][j]))
+//							contador++;
+//						if (contador == 4)
+//							isMutant = true;
+//					}
+//				}
+//			}
+//		}
+//		return isMutant;
+//	}
+//
+//	public boolean onCross(String[][] adn) {
+//		boolean isMutant = false;
+//		int contador = 0;
+//		for (int i = 0; i < adn.length; i++) {
+//			for (int j = 0; j < adn.length; j++) {
+//				// recorro la matriz
+//				contador = 0;
+//				if(adn.length-i>=4 && adn.length-j>=4) {
+//					for (int b = 0; b <4 ; b++) {
+//						if (adn[i][j].equals(adn[i + b][j + b]))
+//							contador++;
+//						if (contador == 4)
+//							isMutant = true;
+//					}
+//				}	
+//			}
+//		}
+//		return isMutant;
+//	}
 }

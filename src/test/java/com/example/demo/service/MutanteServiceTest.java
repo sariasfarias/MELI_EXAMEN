@@ -16,16 +16,16 @@ class MutanteServiceTest {
 	
 	@Test
 	void rowTest() {	
-		assertTrue(mutanteService.onRow(dna));
+		assertTrue(mutanteService.onLine(dna));
 	}
 	
 	@Test
 	void columnTest() {	
-		assertTrue(mutanteService.onColumn(dna));
+		assertTrue(mutanteService.onLine(dna));
 	}
 	
 	@Test
 	void crossTest() {	
-		assertTrue(mutanteService.onCross(dna));
+		assertTrue(mutanteService.onLine(dna));
 	}
 }
