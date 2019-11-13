@@ -88,7 +88,7 @@ public class MutanteService {
 				 contadorRow = 0;
 				 contadorColumn=0;
 				 contadorCross=0;
-				if(adn.length-j>=4 && adn.length-j>=4) {
+				if(adn.length-i>=4 && adn.length-j>=4) {
 //					for (int a = j; a < j+4; a++) {
 //						if (adn[i][j].equals(adn[i][a]) || adn[i][j].equals(adn[a][j])) {
 //							contador++;
@@ -96,14 +96,14 @@ public class MutanteService {
 //						if (contador == 4)
 //							return true;
 //					}
-					for (int b = 0; b <4 ; b++) {
+					for (int b = 1; b <4 ; b++) {
 						if (adn[i][j].equals(adn[i][j+b]))
 							contadorRow++;
 						if ( adn[i][j].equals(adn[i+b][j])) 
 							contadorColumn++;
 						if (adn[i][j].equals(adn[i + b][j + b]))
 							contadorCross++;
-						if (contadorRow == 4 || contadorColumn == 4 ||contadorCross == 4)
+						if (contadorRow == 3 || contadorColumn == 3 ||contadorCross == 3)
 							return true;
 					}
 				}
