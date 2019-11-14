@@ -1,8 +1,16 @@
 HOST: http://ec2-18-191-31-214.us-east-2.compute.amazonaws.com:8080/api/v1/mutante
 
+Para probar el servicio se utilizo Postman sin ningún tipo de credenciales, y
+dependiendo de la url será un GET o UN POST.
+Para realizar un POST se debe enviar un Json como el descripto en el ejemplo,
+según sea el caso será la respuesta.
+
+
 # API REST Mutant
 
-Se implementa una REST API usando JSON.
+Se implementa una REST API en spring boot, con base de datos en AWS con motor mySQL,
+el cual esta deployado en una maquina virtual en Linux en AWS.
+El trafico de información se hace mediante JSON.
 La API podra interactura con elementos externos que requieran del servicio.
 
 # HTTP Request soportadas
