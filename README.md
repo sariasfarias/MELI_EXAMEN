@@ -2,6 +2,8 @@ HOST: http://ec2-18-191-31-214.us-east-2.compute.amazonaws.com:8080/api/v1/mutan
 
 # INSTRUCCIONES
 
+Descargar y ubicar el archivo 36165347.pem 
+
 Abrir un terminal, donde este el permiso 36165347.pem y ejecutar el sigiente comando
 
 ~ ssh -i "35165347.pem" ec2-user@ec2-18-191-31-214.us-east-2.compute.amazonaws.com
