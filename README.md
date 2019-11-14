@@ -1,10 +1,18 @@
 HOST: http://ec2-18-191-31-214.us-east-2.compute.amazonaws.com:8080/api/v1/mutante
 
-Para probar el servicio se utilizo Postman sin ningún tipo de credenciales, y
-dependiendo de la url será un GET o UN POST.
-Para realizar un POST se debe enviar un Json como el descripto en el ejemplo,
-según sea el caso será la respuesta.
+#INSTRUCCIONES
 
+Abrir un terminal, donde este el permiso 36165347.pem y ejecutar el sigiente comando
+
+~ ssh -i "35165347.pem" ec2-user@ec2-18-191-31-214.us-east-2.compute.amazonaws.com
+
+Se conectará a la maquina virtual de linux, una vez adentro ejecutar el siguiente comando para ejecutar la aplicación
+
+~  java -jar MELI_EXAMEN-0.0.1-SNAPSHOT.jar
+
+Conectarse a Postman con el host indicado sin ningún tipo de credenciales.
+Para realizar un POST se debe enviar un Json como el descripto,
+según sea el caso será la respuesta.
 
 # API REST Mutant
 
