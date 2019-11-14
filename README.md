@@ -1,4 +1,4 @@
-HOST: localhost:8080/api/v1/mutante
+HOST: http://ec2-18-191-31-214.us-east-2.compute.amazonaws.com:8080/api/v1/mutante
 
 # API REST Mutant
 
