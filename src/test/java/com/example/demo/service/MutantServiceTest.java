@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MutanteServiceTest {
+class MutantServiceTest {
 	@Autowired
-	MutanteService mutanteService;
+	MutantService mutanteService;
 	
 	private static String[][] dna = {{"A","T","G","C","G","A"},{"C","A","G","T","G","C"},{"T","T","A","T","G","T"},{"A","G","A","A","G","G"},{"C","C","C","C","T","A"},{"T","C","A","C","T","G"}};
 	

@@ -7,18 +7,18 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Stash;
 import com.example.demo.repository.HumanRepository;
-import com.example.demo.repository.MutanteRepository;
+import com.example.demo.repository.MutantRepository;
 
 @Service
 public class StashService {
 	@Autowired
-	private MutanteRepository mutantRepository;
+	private MutantRepository mutantRepository;
 	@Autowired
 	private HumanRepository humanRepository;
 	
 	private static DecimalFormat df = new DecimalFormat("0.00");
 	
-	public StashService(MutanteRepository mutantRepository, HumanRepository humanRepository) {
+	public StashService(MutantRepository mutantRepository, HumanRepository humanRepository) {
 		super();
 		this.mutantRepository = mutantRepository;
 		this.humanRepository = humanRepository;

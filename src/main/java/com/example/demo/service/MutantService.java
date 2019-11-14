@@ -4,16 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.Human;
-import com.example.demo.domain.Mutante;
+import com.example.demo.domain.Mutant;
 import com.example.demo.dto.HumanDto;
-import com.example.demo.dto.MutanteDto;
+import com.example.demo.dto.MutantDto;
 import com.example.demo.repository.HumanRepository;
-import com.example.demo.repository.MutanteRepository;
+import com.example.demo.repository.MutantRepository;
 
 @Service
-public class MutanteService {
+public class MutantService {
 	@Autowired
-	private MutanteRepository mutantRepository;
+	private MutantRepository mutantRepository;
 	@Autowired
 	private HumanRepository humanRepository;
 	
@@ -27,40 +27,38 @@ public class MutanteService {
 		this.error = error;
 	}
 
-	public MutanteService(MutanteRepository mutantRepository,HumanRepository humanRepository) {
+	public MutantService(MutantRepository mutantRepository,HumanRepository humanRepository) {
 		super();
 		this.mutantRepository = mutantRepository;
 		this.humanRepository=humanRepository;
 	}
 
-	public MutanteDto save(MutanteDto mutanteDto) {
+	public MutantDto save(MutantDto mutanteDto) {
 		
 		try {
-			Mutante mutante = new Mutante();
+			Mutant mutante = new Mutant();
 			mutante.setAdn(String.join(",", mutanteDto.getAdn()));
 
 			mutantRepository.save(mutante);
 			return mutanteDto;
 
 		} catch (Exception e) {
-			
 			return mutanteDto;
 		}
-
 	}
 	
-	public void saveHuman(MutanteDto mutanteDto) {
+	public void saveHuman(HumanDto humanDto) {
 
 		Human human = new Human();
-		human.setAdn(String.join(",", mutanteDto.getAdn()));
+		human.setAdn(String.join(",", humanDto.getAdn()));
 		humanRepository.save(human);
-
 	}
 
 	public boolean isMutant(String[] adn) {
 		error=false;
 		String[][] matrizAdn = new String[adn.length][adn.length];
 		try {
+			isError();
 			for (int i = 0; i < adn.length; i++) {
 				char[] aux = adn[i].toCharArray();
 				for (int j = 0; j < aux.length; j++) {
@@ -89,13 +87,6 @@ public class MutanteService {
 				 contadorColumn=0;
 				 contadorCross=0;
 				if(adn.length-i>=4 && adn.length-j>=4) {
-//					for (int a = j; a < j+4; a++) {
-//						if (adn[i][j].equals(adn[i][a]) || adn[i][j].equals(adn[a][j])) {
-//							contador++;
-//						}
-//						if (contador == 4)
-//							return true;
-//					}
 					for (int b = 1; b <4 ; b++) {
 						if (adn[i][j].equals(adn[i][j+b]))
 							contadorRow++;
@@ -113,44 +104,4 @@ public class MutanteService {
 		}
 		return false;
 	}
-
-//	public boolean onColumn(String[][] adn) {
-//		boolean isMutant = false;
-//		int contador = 0;
-//		for (int i = 0; i < adn.length; i++) {
-//			for (int j = 0; j < adn.length; j++) {
-//				// recorro la matriz
-//				contador = 0;
-//				if(adn.length-i>=4) {
-//					for (int a = i; a <i+4; a++) {
-//						if (adn[i][j].equals(adn[a][j]))
-//							contador++;
-//						if (contador == 4)
-//							isMutant = true;
-//					}
-//				}
-//			}
-//		}
-//		return isMutant;
-//	}
-//
-//	public boolean onCross(String[][] adn) {
-//		boolean isMutant = false;
-//		int contador = 0;
-//		for (int i = 0; i < adn.length; i++) {
-//			for (int j = 0; j < adn.length; j++) {
-//				// recorro la matriz
-//				contador = 0;
-//				if(adn.length-i>=4 && adn.length-j>=4) {
-//					for (int b = 0; b <4 ; b++) {
-//						if (adn[i][j].equals(adn[i + b][j + b]))
-//							contador++;
-//						if (contador == 4)
-//							isMutant = true;
-//					}
-//				}	
-//			}
-//		}
-//		return isMutant;
-//	}
 }

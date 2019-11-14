@@ -13,10 +13,11 @@ public class HumanDto implements Serializable {
 	private String[] adn;
 	private Date inserted;
 
-	public HumanDto() {
+	public HumanDto(MutantDto mutante) {
 		super();
 		Date date = new Date(System.currentTimeMillis());
 		this.inserted = date;
+		this.adn=mutante.getAdn();
 	}
 
 	public long getId() {

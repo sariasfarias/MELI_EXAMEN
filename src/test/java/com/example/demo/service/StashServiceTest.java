@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.example.demo.domain.Stash;
 import com.example.demo.repository.HumanRepository;
-import com.example.demo.repository.MutanteRepository;
+import com.example.demo.repository.MutantRepository;
 
 @SpringBootTest
 class StashServiceTest {
@@ -19,7 +19,7 @@ class StashServiceTest {
 	@Autowired
 	private StashService stashService;
 	@Autowired
-	private MutanteRepository mutantRepository;
+	private MutantRepository mutantRepository;
 	@Autowired
 	private HumanRepository humanRepository;
 	

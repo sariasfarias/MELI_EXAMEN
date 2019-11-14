@@ -7,26 +7,26 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.MutanteDto;
-import com.example.demo.service.MutanteService;
+import com.example.demo.dto.HumanDto;
+import com.example.demo.dto.MutantDto;
+import com.example.demo.service.MutantService;
 import com.example.demo.service.StashService;
 
 @Controller
 
 @RestController
 @RequestMapping("api/v1/mutante")
-public class MutanteController {
+public class MutantController {
 
 	@Autowired
-	private MutanteService mutanteService;
+	private MutantService mutanteService;
 	@Autowired
 	private StashService stashService;
 	
 	@PostMapping("/")
-	public ResponseEntity<Object> save(@RequestBody MutanteDto mutanteDto){
+	public ResponseEntity<Object> save(@RequestBody MutantDto mutanteDto){
 		if(mutanteService.isMutant(mutanteDto.getAdn())) {
 			mutanteDto= mutanteService.save(mutanteDto);
 				return ResponseEntity.ok().body("Mutant insert");
@@ -35,7 +35,7 @@ public class MutanteController {
 		if(mutanteService.isError()) {
 			return ResponseEntity.badRequest().body("The input values are incorrect");
 		}
-		mutanteService.saveHuman(mutanteDto);
+		mutanteService.saveHuman(new HumanDto(mutanteDto));
 		return ResponseEntity.status(403).body("Human insert");
 				
 	}

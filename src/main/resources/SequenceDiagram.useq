@@ -3,121 +3,174 @@
   <object id="1" language="java" name="com.example.demo.MeliExamenApplication" project="MELI_EXAMEN" 
     file="/MELI_EXAMEN/src/main/java/com/example/demo/MeliExamenApplication.java" binary="false" 
     label="meliExamenApplication" type="class" autoSize="true">    
-    <position height="-1" width="-1" x="138" y="0"/>    
+    <position height="-1" width="-1" x="96" y="0"/>    
     <execution id="2">      
-      <position height="778" width="140" x="5" y="80"/>    
+      <position height="1027" width="140" x="5" y="119"/>    
     </execution>    
     <execution id="7">      
-      <position height="16" width="7" x="72" y="184"/>    
+      <position height="16" width="7" x="72" y="967"/>    
     </execution>    
     <execution id="8">      
-      <position height="16" width="7" x="72" y="354"/>    
+      <position height="16" width="7" x="72" y="516"/>    
     </execution>    
     <execution id="9">      
-      <position height="16" width="7" x="72" y="586"/>    
+      <position height="16" width="7" x="72" y="815"/>    
     </execution>    
     <execution id="10">      
-      <position height="16" width="7" x="72" y="746"/>    
+      <position height="16" width="7" x="72" y="1098"/>    
     </execution>  
   </object>  
   <object id="11" language="java" name="com.example.demo.controller.MutanteController" project="MELI_EXAMEN" 
     file="/MELI_EXAMEN/src/main/java/com/example/demo/controller/MutanteController.java" binary="false" 
     label="mutanteController" type="class" autoSize="true">    
-    <position height="0" width="0" x="0" y="0"/>    
+    <position height="-1" width="-1" x="259" y="0"/>    
     <execution id="4">      
-      <position height="554" width="113" x="149" y="96"/>    
-    </execution>    
-    <execution id="20">      
-      <position height="48" width="7" x="202" y="168"/>    
-    </execution>    
-    <execution id="22">      
-      <position height="48" width="7" x="202" y="338"/>    
-    </execution>    
-    <execution id="24">      
-      <position height="48" width="7" x="202" y="570"/>    
-    </execution>    
-    <execution id="6">      
-      <position height="176" width="113" x="149" y="666"/>    
-    </execution>    
-    <execution id="28">      
-      <position height="48" width="7" x="202" y="730"/>    
+      <position height="880" width="113" x="149" y="135"/>    
     </execution>    
     <execution id="15">      
-      <position height="16" width="7" x="202" y="150"/>    
+      <position height="752" width="7" x="202" y="247"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="99" width="113" x="149" y="1031"/>    
     </execution>  
   </object>  
-  <object id="30" language="java" name="com.example.demo.service.MutanteService" project="MELI_EXAMEN" 
-    file="/MELI_EXAMEN/src/main/java/com/example/demo/service/MutanteService.java" binary="false" label="mutanteService" 
+  <object id="40" language="java" name="com.example.demo.service.StashService" project="MELI_EXAMEN" 
+    file="/MELI_EXAMEN/src/main/java/com/example/demo/service/StashService.java" binary="false" label="stashService" 
     type="class" autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="13">      
-      <position height="191" width="103" x="266" y="112"/>    
-    </execution>    
-    <execution id="17">      
-      <position height="83" width="103" x="266" y="319"/>    
-    </execution>    
-    <execution id="19">      
-      <position height="220" width="103" x="266" y="414"/>    
-    </execution>    
-    <execution id="35">      
-      <position height="16" width="7" x="314" y="227"/>    
-    </execution>    
-    <execution id="32">      
-      <position height="16" width="0" x="0" y="144"/>    
+    <execution id="38">      
+      <position height="16" width="0" x="0" y="1079"/>    
     </execution>  
   </object>  
-  <object id="50" language="java" name="com.example.demo.domain.Human" project="MELI_EXAMEN" 
+  <object id="41" language="java" name="com.example.demo.service.MutantService" project="MELI_EXAMEN" 
+    file="/MELI_EXAMEN/src/main/java/com/example/demo/service/MutantService.java" binary="false" label="mutanteService" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="144" width="0" x="0" y="294"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="144" width="0" x="0" y="655"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="64" width="103" x="266" y="151"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="16" width="0" x="0" y="183"/>    
+    </execution>  
+  </object>  
+  <object id="60" language="java" name="com.example.demo.dto.HumanDto" project="MELI_EXAMEN" 
+    file="/MELI_EXAMEN/src/main/java/com/example/demo/dto/HumanDto.java" binary="false" label="humanDto" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="55">      
+      <position height="16" width="0" x="0" y="735"/>    
+    </execution>  
+  </object>  
+  <object id="61" language="java" name="com.example.demo.domain.Mutant" project="MELI_EXAMEN" 
+    file="/MELI_EXAMEN/src/main/java/com/example/demo/domain/Mutant.java" binary="false" label="mutante" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="43">      
+      <position height="16" width="0" x="0" y="310"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="16" width="0" x="0" y="342"/>    
+    </execution>  
+  </object>  
+  <object id="62" language="java" name="org.springframework.data.repository.CrudRepository" project="MELI_EXAMEN" 
+    file="C:/Users/surface/.m2/repository/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar" 
+    binary="true" label="mutantRepository" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="49">      
+      <position height="16" width="0" x="0" y="406"/>    
+    </execution>  
+  </object>  
+  <object id="63" language="java" name="com.example.demo.domain.Human" project="MELI_EXAMEN" 
     file="/MELI_EXAMEN/src/main/java/com/example/demo/domain/Human.java" binary="false" label="human" type="class" 
     autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="40">      
-      <position height="16" width="0" x="0" y="430"/>    
+    <execution id="51">      
+      <position height="16" width="0" x="0" y="671"/>    
     </execution>    
-    <execution id="42">      
-      <position height="16" width="0" x="0" y="462"/>    
+    <execution id="53">      
+      <position height="16" width="0" x="0" y="703"/>    
     </execution>  
   </object>  
-  <object id="51" language="java" name="com.example.demo.dto.MutanteDto" project="MELI_EXAMEN" 
-    file="/MELI_EXAMEN/src/main/java/com/example/demo/dto/MutanteDto.java" binary="false" label="mutanteDto" 
-    type="class" autoSize="true">    
+  <object id="64" language="java" name="com.example.demo.dto.MutantDto" project="MELI_EXAMEN" 
+    file="/MELI_EXAMEN/src/main/java/com/example/demo/dto/MutantDto.java" binary="false" label="mutanteDto" type="class" 
+    autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="44">      
-      <position height="16" width="0" x="0" y="494"/>    
+    <execution id="47">      
+      <position height="16" width="0" x="0" y="374"/>    
     </execution>  
   </object>  
-  <object id="52" language="java" name="org.springframework.data.repository.CrudRepository" project="MELI_EXAMEN" 
+  <object id="65" language="java" name="org.springframework.data.repository.CrudRepository" project="MELI_EXAMEN" 
     file="C:/Users/surface/.m2/repository/org/springframework/data/spring-data-commons/2.2.1.RELEASE/spring-data-commons-2.2.1.RELEASE.jar" 
     binary="true" label="humanRepository" type="interface" autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="46">      
-      <position height="16" width="0" x="0" y="526"/>    
+    <execution id="57">      
+      <position height="16" width="0" x="0" y="767"/>    
     </execution>  
   </object>  
-  <object id="53" language="java" name="com.example.demo.service.StashService" project="MELI_EXAMEN" 
-    file="/MELI_EXAMEN/src/main/java/com/example/demo/service/StashService.java" binary="false" label="stashService" 
-    type="class" autoSize="true">    
-    <position height="-1" width="-1" x="260" y="0"/>    
-    <execution id="27">      
-      <position height="144" width="103" x="373" y="682"/>    
+  <object id="66" language="java" name="org.springframework.http.ResponseEntity" project="MELI_EXAMEN" 
+    file="C:/Users/surface/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar" 
+    binary="true" label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="16" width="0" x="0" y="454"/>    
     </execution>    
-    <execution id="56">      
-      <position height="80" width="7" x="421" y="714"/>    
+    <execution id="24">      
+      <position height="16" width="0" x="0" y="581"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="16" width="0" x="0" y="930"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="16" width="0" x="0" y="1047"/>    
     </execution>  
   </object>  
-  <object id="58" language="java" name="com.example.demo.repository.MutanteRepository" project="MELI_EXAMEN" 
-    file="/MELI_EXAMEN/src/main/java/com/example/demo/repository/MutanteRepository.java" binary="false" 
-    label="mutanteRepository" type="interface" autoSize="true">    
-    <position height="-1" width="-1" x="442" y="0"/>    
-    <execution id="37">      
-      <position height="16" width="118" x="373" y="271"/>    
-    </execution>    
-    <execution id="48">      
-      <position height="16" width="118" x="373" y="558"/>    
-    </execution>    
-    <execution id="55">      
-      <position height="112" width="118" x="480" y="698"/>    
+  <object id="67" language="java" name="org.springframework.http.ResponseEntity.BodyBuilder" project="MELI_EXAMEN" 
+    file="C:/Users/surface/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar" 
+    binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="16" width="0" x="0" y="482"/>    
     </execution>  
   </object>  
+  <object id="68" language="java" name="org.springframework.http.ResponseEntity.BodyBuilder" project="MELI_EXAMEN" 
+    file="C:/Users/surface/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar" 
+    binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="26">      
+      <position height="16" width="0" x="0" y="613"/>    
+    </execution>  
+  </object>  
+  <object id="69" language="java" name="org.springframework.http.ResponseEntity.BodyBuilder" project="MELI_EXAMEN" 
+    file="C:/Users/surface/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar" 
+    binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="16" width="0" x="0" y="962"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="70" interaction-operator="OPT">    
+    <interaction-operand id="71" constraint="mutanteService.isMutant(mutanteDto.getAdn())">      
+      <fragment refId="48"/>      
+      <fragment refId="46"/>      
+      <fragment refId="16"/>      
+      <fragment refId="20"/>      
+      <fragment refId="42"/>      
+      <fragment refId="44"/>      
+      <fragment refId="18"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="72" interaction-operator="OPT">    
+    <interaction-operand id="73" constraint="mutanteService.isError()">      
+      <fragment refId="23"/>      
+      <fragment refId="25"/>    
+    </interaction-operand>  
+  </combined-fragment>  
   <message id="3" 
     operation="save(com.example.demo.dto.MutanteDto):org.springframework.http.ResponseEntity&lt;Object&gt;" 
     asynchronous="false">    
@@ -134,92 +187,100 @@
   </message>  
   <message id="14" 
     operation="save(com.example.demo.dto.MutanteDto):org.springframework.http.ResponseEntity&lt;Object&gt;" 
-    asynchronous="false" x="110" y="119">    
+    asynchronous="false" x="112" y="179">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="15"/>  
   </message>  
-  <message id="16" operation="isError():boolean" asynchronous="false">    
-    <end type="SOURCE" refId="4"/>    
+  <message id="16" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="17"/>  
   </message>  
-  <message id="18" operation="saveHuman(com.example.demo.dto.MutanteDto):void" asynchronous="false" x="175" y="355">    
-    <end type="SOURCE" refId="4"/>    
+  <message id="18" operation="ok():org.springframework.http.ResponseEntity.BodyBuilder" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="19"/>  
   </message>  
-  <message id="21" asynchronous="false">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="7"/>  
+  <message id="20" operation="body(T):org.springframework.http.ResponseEntity&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="21"/>  
   </message>  
-  <message id="23" asynchronous="false">    
-    <end type="SOURCE" refId="22"/>    
+  <message id="22" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="8"/>  
   </message>  
-  <message id="25" asynchronous="false">    
-    <end type="SOURCE" refId="24"/>    
-    <end type="TARGET" refId="9"/>  
-  </message>  
-  <message id="26" operation="calculate():com.example.demo.domain.Stash" asynchronous="false">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="27"/>  
-  </message>  
-  <message id="29" asynchronous="false">    
-    <end type="SOURCE" refId="28"/>    
-    <end type="TARGET" refId="10"/>  
-  </message>  
-  <message id="31" operation="onLine(java.lang.String[][]):boolean" asynchronous="false" x="331" y="146">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="32"/>  
-  </message>  
-  <message id="33" asynchronous="false">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="20"/>  
-  </message>  
-  <message id="34" operation="isError():boolean" asynchronous="false">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="35"/>  
-  </message>  
-  <message id="36" operation="save(S):S" asynchronous="false">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="37"/>  
-  </message>  
-  <message id="38" asynchronous="false">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="22"/>  
-  </message>  
-  <message id="39" operation="Human()" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="40"/>  
-  </message>  
-  <message id="41" operation="setAdn(java.lang.String):void" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="42"/>  
-  </message>  
-  <message id="43" operation="getAdn():java.lang.String[]" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="44"/>  
-  </message>  
-  <message id="45" operation="save(S):S" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="46"/>  
-  </message>  
-  <message id="47" operation="save(S):S" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="48"/>  
-  </message>  
-  <message id="49" asynchronous="false">    
-    <end type="SOURCE" refId="19"/>    
+  <message id="23" operation="badRequest():org.springframework.http.ResponseEntity.BodyBuilder" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="24"/>  
   </message>  
-  <message id="54" operation="count():long" asynchronous="false">    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="55"/>  
+  <message id="25" operation="body(T):org.springframework.http.ResponseEntity&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="26"/>  
   </message>  
-  <message id="57" asynchronous="false">    
-    <end type="SOURCE" refId="56"/>    
+  <message id="27" operation="saveHuman(com.example.demo.dto.HumanDto):void" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="28"/>  
   </message>  
-  <message id="59" asynchronous="false">    
-    <end type="SOURCE" refId="55"/>    
-    <end type="TARGET" refId="56"/>  
+  <message id="29" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="30" operation="status(int):org.springframework.http.ResponseEntity.BodyBuilder" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="body(T):org.springframework.http.ResponseEntity&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="35" operation="ok(T):org.springframework.http.ResponseEntity&lt;T&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="37" operation="calculate():com.example.demo.domain.Stash" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="39" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="42" operation="Mutant()" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>  
+  <message id="44" operation="setAdn(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="getAdn():java.lang.String[]" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="save(S):S" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="Human()" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>  
+  <message id="52" operation="setAdn(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="getAdn():java.lang.String[]" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="56" operation="save(S):S" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="58" operation="onLine(java.lang.String[][]):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="59"/>  
   </message>
 </sequence-diagram>

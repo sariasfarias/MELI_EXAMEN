@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="mutant")
-public class Mutante {
+public class Mutant {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
@@ -23,7 +23,7 @@ public class Mutante {
 	@Column(name="inserted")
 	private Date inserted;
 
-	public Mutante() {
+	public Mutant() {
 		super();
 		//SimpleDateFormat formatter= new SimpleDateFormat("dd-MM-yyyy HH:mm");
 		Date date = new Date(System.currentTimeMillis());

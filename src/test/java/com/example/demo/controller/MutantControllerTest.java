@@ -10,18 +10,18 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.example.demo.dto.MutanteDto;
+import com.example.demo.dto.MutantDto;
 @SpringBootTest
-class MutanteControllerTest {
+class MutantControllerTest {
 	@Autowired
-	MutanteController mutanteController;
+	MutantController mutanteController;
 	@Test
 	void saveMutantTest() {
 		
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
          
-        MutanteDto mutanteDto = new MutanteDto();
+        MutantDto mutanteDto = new MutantDto();
         String[] adn= {"ATGCTA","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
         mutanteDto.setAdn(adn);
         ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);
@@ -34,7 +34,7 @@ class MutanteControllerTest {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
          
-        MutanteDto mutanteDto = new MutanteDto();
+        MutantDto mutanteDto = new MutantDto();
         String[] adn= {"TTGCTA","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
         mutanteDto.setAdn(adn);
         ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);
@@ -48,7 +48,7 @@ class MutanteControllerTest {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
          
-        MutanteDto mutanteDto = new MutanteDto();
+        MutantDto mutanteDto = new MutantDto();
         String[] adn= {"TTGCTAT","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
         mutanteDto.setAdn(adn);
         ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);
@@ -62,7 +62,7 @@ class MutanteControllerTest {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
          
-        MutanteDto mutanteDto = new MutanteDto();
+        MutantDto mutanteDto = new MutantDto();
         String[] adn= {"PTGCTA","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"};
         mutanteDto.setAdn(adn);
         ResponseEntity<Object> responseEntity = mutanteController.save(mutanteDto);

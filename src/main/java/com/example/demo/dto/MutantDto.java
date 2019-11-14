@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.sql.Date;
 
 
-public class MutanteDto implements Serializable{
+public class MutantDto implements Serializable{
 
 	/**
 	 * 
@@ -15,7 +15,7 @@ public class MutanteDto implements Serializable{
 	private String[] adn;
 	private Date inserted;
 
-	public MutanteDto() {
+	public MutantDto() {
 		super();
 		Date date = new Date(System.currentTimeMillis());
 		this.inserted = date;
