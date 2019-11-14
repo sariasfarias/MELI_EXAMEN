@@ -8,7 +8,7 @@ Abrir un terminal, donde este el permiso 36165347.pem y ejecutar el sigiente com
 
 ~ ssh -i "35165347.pem" ec2-user@ec2-18-191-31-214.us-east-2.compute.amazonaws.com
 
-Se conectará a la maquina virtual de linux, una vez adentro ejecutar el siguiente comando para ejecutar la aplicación
+Se conectará a la maquina virtual de linux, una vez adentro ejecutar el siguiente comando
 
 ~  java -jar MELI_EXAMEN-0.0.1-SNAPSHOT.jar
 
