@@ -13,8 +13,7 @@ según sea el caso será la respuesta.
 
 # API REST Mutant
 
-Se implementa una REST API en spring boot, con base de datos en AWS con motor mySQL,
-el cual esta deployado en una maquina virtual en Linux en AWS.
+Se implementa una REST API en spring boot, con base de datos mySQL
 El trafico de información se hace mediante JSON.
 La API podra interactura con elementos externos que requieran del servicio.
 
