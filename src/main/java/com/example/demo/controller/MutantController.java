@@ -27,13 +27,13 @@ public class MutantController {
 	
 	@PostMapping("/")
 	public ResponseEntity<Object> save(@RequestBody MutantDto mutanteDto){
+		if(mutanteService.isError()) {
+			return ResponseEntity.badRequest().body("The input values are incorrect");
+		}
+		
 		if(mutanteService.isMutant(mutanteDto.getAdn())) {
 			mutanteDto= mutanteService.save(mutanteDto);
 				return ResponseEntity.ok().body("Mutant insert");
-		}
-		
-		if(mutanteService.isError()) {
-			return ResponseEntity.badRequest().body("The input values are incorrect");
 		}
 		mutanteService.saveHuman(new HumanDto(mutanteDto));
 		return ResponseEntity.status(403).body("Human insert");
