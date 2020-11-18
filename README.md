@@ -35,7 +35,7 @@ La API podra interactura con elementos externos que requieran del servicio.
 + Request (application/json)
 
 {
-"adn":["TTGCTA","CAGTGC","TTATGT","AGAAGG","ACCCTA","TCACTG"]
+"adn"["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 }
 + Response 200 (application/json)
 {
